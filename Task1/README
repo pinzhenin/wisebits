@@ -1,0 +1,3 @@
+В качестве фреймворка выбрал Yii2, с которым работал над прошлым проектом.
+Class yii\db\ActiveRecord уже имеет готовые методы валидации и манипуляции данными: save, insert, update, delete, find.
+PHP version: 7.3.
