@@ -8,7 +8,7 @@ class NameStopWordsValidator extends Validator
 {
     public function validateAttribute($model, $attribute)
     {
-        if (in_array($model->$attribute, $this->getStopWords())) {
+        if (in_array(strtolower($model->$attribute), $this->getStopWords())) {
             $this->addError($model, $attribute, 'This name cannot be used');
         }
     }
